@@ -196,11 +196,6 @@
             儲值/餘額消費(歐付寶)
             </summary>
         </member>
-        <member name="F:AllPay.Payment.Integration.PaymentMethodItem.TopUpUsed_ESUN">
-            <summary>
-            儲值/餘額消費(玉山)
-            </summary>
-        </member>
         <member name="F:AllPay.Payment.Integration.PaymentMethodItem.BARCODE">
             <summary>
             超商條碼繳款。
@@ -512,6 +507,11 @@
         <member name="P:AllPay.Payment.Integration.AllInOneMetadata.SendArguments.OrderResultURL">
             <summary>
             用戶端回傳付款結果的網址(※設定了此參數值，會使設定的ClientBackURL失效)。
+            </summary>
+        </member>
+        <member name="P:AllPay.Payment.Integration.AllInOneMetadata.SendArguments.UseRedeem">
+            <summary>
+            是否可以使用購物金/紅包折抵。
             </summary>
         </member>
         <member name="E:AllPay.Payment.Integration.AllInOneMetadata.SendArguments.PropertyChanged">
@@ -3113,6 +3113,21 @@
         <member name="F:AllPay.Payment.Integration.PaymentMethod.APPBARCODE">
             <summary>
             全家立即儲。
+            </summary>
+        </member>
+        <member name="T:AllPay.Payment.Integration.UseRedeemFlag">
+            <summary>
+            是否可以使用購物金/紅包折抵。
+            </summary>
+        </member>
+        <member name="F:AllPay.Payment.Integration.UseRedeemFlag.Yes">
+            <summary>
+            使用折抵。
+            </summary>
+        </member>
+        <member name="F:AllPay.Payment.Integration.UseRedeemFlag.No">
+            <summary>
+            不使用折抵。
             </summary>
         </member>
         <member name="T:AllPay.Payment.Integration.AllInEscrow">
